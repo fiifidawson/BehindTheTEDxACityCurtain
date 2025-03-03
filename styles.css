@@ -29,7 +29,7 @@ body {
     align-items: center;
     text-align: center;
     background: url('images/background.jpg') no-repeat center center/cover;
-    color: white;
+    color: red;
   }
   
   .hero .logo {
@@ -41,14 +41,14 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 10px 0;
-    color: white;
+    color: black;
   }
   
   .hero .tagline {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 10px 0;
-    color: white;
+    color: black;
   }
   
   .hero .scroll-down {
