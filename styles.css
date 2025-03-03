@@ -39,12 +39,16 @@ body {
   
   .hero .subtitle {
     font-size: 1.5rem;
+    font-weight: bold;
     margin: 10px 0;
+    color: white;
   }
   
   .hero .tagline {
     font-size: 1.2rem;
+    font-weight: bold;
     margin: 10px 0;
+    color: white;
   }
   
   .hero .scroll-down {
