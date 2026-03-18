@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: "/BehindTheTEDxACityCurtain",
+  assetPrefix: "/BehindTheTEDxACityCurtain",
   images: {
     unoptimized: true,
   },

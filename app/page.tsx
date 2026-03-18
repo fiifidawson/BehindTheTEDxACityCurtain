@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import ScrollReveal from "./components/ScrollReveal";
 import Gallery from "./components/Gallery";
+import { BASE_PATH } from "./config";
 
 const videos = [
   {
@@ -39,7 +40,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero" id="home">
         <Image
-          src="/images/tedx-logo.jpg"
+          src={`${BASE_PATH}/images/tedx-logo.jpg`}
           alt="TEDx Logo"
           width={120}
           height={120}
@@ -70,7 +71,7 @@ export default function Home() {
           <ScrollReveal>
             <div className="about-image">
               <Image
-                src="/images/background.jpg"
+                src={`${BASE_PATH}/images/background.jpg`}
                 alt="TEDxAcademicCity event"
                 fill
                 sizes="(max-width: 900px) 100vw, 50vw"
@@ -130,7 +131,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="team-photo-wrap">
             <Image
-              src="/images/team-photo.jpg"
+              src={`${BASE_PATH}/images/team-photo.jpg`}
               alt="Full Team Photo"
               width={900}
               height={600}
