@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Behind The TEDx Curtain",
+    "slug": "behind-the-tedx-curtain",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./images/tedx-logo.jpg",
+    "scheme": "tedx-acitu",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tedxacitu.behindthecurtain"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "com.tedxacitu.behindthecurtain"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./images/tedx-logo.jpg"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "baseUrl": "/BehindTheTEDxACityCurtain"
+    }
+  }
+}

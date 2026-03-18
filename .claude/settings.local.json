@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/fiifidawson/devdawson/GitHub/BehindTheTEDxACityCurtain/app/\\(tabs\\)\")",
+      "Bash(mkdir -p \"C:/Users/fiifidawson/devdawson/GitHub/BehindTheTEDxACityCurtain/constants\")",
+      "Bash(npm install:*)",
+      "Bash(npx expo:*)",
+      "Bash(npm ls:*)",
+      "Bash(cd:*)",
+      "Bash(rm -f index.html styles.css)",
+      "Bash(rm -rf .expo dist node_modules/.cache)"
+    ]
+  }
+}
