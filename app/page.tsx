@@ -11,9 +11,9 @@ const videos = [
     speaker: "Eve Asante",
   },
   {
-    src: "https://www.youtube.com/embed/1nrBO5bi3TQ",
-    title: "Catalytic Power of Cheerleading",
-    speaker: "Elinam Horgli",
+    src: "https://www.youtube.com/embed/SxFtSlSK85c",
+    title: "Financial Literacy for Long-Term Prosperity",
+    speaker: "Emmanuel Anti",
   },
   {
     src: "https://www.youtube.com/embed/pInJEdXNnpA",
@@ -26,10 +26,10 @@ const videos = [
     speaker: "Eugene Ewusi-Annan",
   },
   {
-    src: "https://www.youtube.com/embed/SxFtSlSK85c",
-    title: "Financial Literacy for Long-Term Prosperity",
-    speaker: "Emmanuel Anti",
-  },
+    src: "https://www.youtube.com/embed/1nrBO5bi3TQ",
+    title: "Catalytic Power of Cheerleading",
+    speaker: "Elinam Horgli",
+  }
 ];
 
 export default function Home() {
