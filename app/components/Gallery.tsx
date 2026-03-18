@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
-import { BASE_PATH } from "../config";
+import { BASE_PATH, BLUR_PLACEHOLDER } from "../config";
 
 const photos = [
   { src: `${BASE_PATH}/images/1.jpg`, alt: "Event Photo 1", caption: "Behind the scenes", grid: "g1" },
@@ -61,7 +61,15 @@ export default function Gallery() {
               onClick={() => openLightbox(photo.src)}
               style={{ height: "100%" }}
             >
-              <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 900px) 50vw, 33vw" />
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                fill
+                sizes="(max-width: 900px) 50vw, 33vw"
+                loading="eager"
+                placeholder="blur"
+                blurDataURL={BLUR_PLACEHOLDER}
+              />
               <div className="gallery-overlay">
                 <span className="gallery-caption">{photo.caption}</span>
               </div>
@@ -78,6 +86,7 @@ export default function Gallery() {
             alt="Lightbox image"
             width={1200}
             height={800}
+            loading="eager"
             style={{ maxWidth: "90vw", maxHeight: "85vh", width: "auto", height: "auto", objectFit: "contain" }}
           />
         </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import ScrollReveal from "./components/ScrollReveal";
 import Gallery from "./components/Gallery";
-import { BASE_PATH } from "./config";
+import { BASE_PATH, BLUR_PLACEHOLDER } from "./config";
 
 const videos = [
   {
@@ -75,6 +75,9 @@ export default function Home() {
                 alt="TEDxAcademicCity event"
                 fill
                 sizes="(max-width: 900px) 100vw, 50vw"
+                loading="eager"
+                placeholder="blur"
+                blurDataURL={BLUR_PLACEHOLDER}
               />
             </div>
           </ScrollReveal>
@@ -137,6 +140,9 @@ export default function Home() {
               height={600}
               sizes="(max-width: 900px) 100vw, 900px"
               style={{ width: "100%", height: "auto" }}
+              loading="eager"
+              placeholder="blur"
+              blurDataURL={BLUR_PLACEHOLDER}
             />
           </div>
         </ScrollReveal>
